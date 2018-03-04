@@ -187,19 +187,32 @@ public class FizzBuzzAcceptanceTest {
             // and for the multiples of five print “Buzz”.
             int buzzVal = i*5;
             if(buzzVal<=maxVal){
+
+                if(!fizzBuzz.contains(buzzVal)) {
+                    buzz.add(buzzVal);
+                }
+                /*
                 // do not add if also multiple of 3
                 if(buzzVal%3!=0) {
                     buzz.add(buzzVal);
                 }
+                */
+
             }
 
             // But for multiples of three print “Fizz” instead of the number
             int fizzVal = i*3;
-            if(fizzVal<=maxVal){
-                // do not add if also multiple of 5
-                if(fizzVal%5!=0) {
+            if(fizzVal<=maxVal) {
+                if (!fizzBuzz.contains(fizzVal)) {
                     fizz.add(fizzVal);
                 }
+                /*
+                   // do not add if also multiple of 5
+                   if(fizzVal%5!=0) {
+                    fizz.add(fizzVal);
+                   }
+                */
+
             }
 
         }
@@ -231,6 +244,7 @@ public class FizzBuzzAcceptanceTest {
             }
 
             Assert.assertEquals(true, checkedIt);
+            System.out.println(fizzBuzzer.convert(checkThis));
 
         }
     }
