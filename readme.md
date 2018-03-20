@@ -4,11 +4,10 @@ Created as part of 20180304 Sunday Morning practice.
 
 Using FizzBuzz definition from http://wiki.c2.com/?FizzBuzzTest
 
-Two videos created - these will be released in the week of 20180304 and links added to readme.md later
-
-An 'other thoughts on testing' video released as Patreon exclusive.
-
-
+I created a set of blog posts for my answer to the FizzBuzz exercise:
+        
+- http://blog.eviltester.com/2018/03/tdd-test-driven-development-java-junit.html
+- http://blog.eviltester.com/2018/03/acceptance-testing-fizzbuzz-java-junit.html
 
 
 ---
